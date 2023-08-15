@@ -1,3 +1,5 @@
+
+
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -5,6 +7,8 @@ body {
   background-image: url("./assets/brand/Vector.png");
   background-position: top right;
   background-repeat: no-repeat;
+  color: #f4f4f4;
+  font-family: 'Lato', sans-serif;
 }
 
 html {
@@ -20,6 +24,8 @@ main {
   overflow-x: auto;
   overflow-y: hidden;
 }
+
+
 
 .b-example-divider {
   flex-shrink: 0;
@@ -118,8 +124,31 @@ main {
 }
 
 .main-body {
-  height:100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1; 
+}
+
+.welcome {
+  font-weight: 400;
+}
+
+.three { 
+  font-weight:900;
+  color: #d3ff2f;
+  background: -webkit-linear-gradient(#d3ff2f, #708e04);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typewrite {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size:1.5rem;
+}
+
+.typewrite:hover {
+  color: #f4f4f4;
+  cursor: initial;
 }
