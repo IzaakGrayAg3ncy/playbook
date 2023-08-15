@@ -137,7 +137,7 @@ main {
 .three { 
   font-weight:900;
   color: #d3ff2f;
-  background: -webkit-linear-gradient(#d3ff2f, #708e04);
+  background: -webkit-linear-gradient(#d3ff2f, #789804);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -151,4 +151,29 @@ main {
 .typewrite:hover {
   color: #f4f4f4;
   cursor: initial;
+}
+
+.btn-primary {
+  color: #0f0f0f;
+  background-color: #d3ff2f;
+  border-color: #0f0f0f;
+}
+
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+  color: #0f0f0f;
+  background-color: #d3ff2f;
+  border-color: #0f0f0f;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+  color: #0f0f0f;
+  background-color: #d3ff2f;
+  border-color: #0f0f0f;
+  box-shadow: none;
+}
+
+.btn-primary:hover {
+  color: #f4f4f4;
+  background-color: #0f0f0f;
+  border-color: #d3ff2f;
 }
