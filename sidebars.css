@@ -177,3 +177,16 @@ main {
   background-color: #0f0f0f;
   border-color: #d3ff2f;
 }
+
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #e8e8e8;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
