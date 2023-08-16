@@ -211,3 +211,13 @@ main {
 .audtext{
   font-size: 0.85rem;
 }
+
+.img-thumbnail {
+  padding: 0.25rem;
+  background: -webkit-linear-gradient(#d3ff2f, #789804);
+  border: 0px solid #d3ff2f;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
+  box-shadow:rgba(0, 0, 0, .1) 0px 4px 12px;
+}
