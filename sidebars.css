@@ -216,8 +216,27 @@ main {
   padding: 0.25rem;
   background: -webkit-linear-gradient(#d3ff2f, #789804);
   border: 0px solid #d3ff2f;
-  border-radius: 0.25rem;
+  border-radius: 6rem;
   max-width: 100%;
   height: auto;
   box-shadow:rgba(0, 0, 0, .1) 0px 4px 12px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  
+  background-color: #21252900;
+  background-clip: border-box;
+  border:none;
+  border-radius: 0.25rem;
+}
+
+.card-body {
+  border: 1px solid #d2ff2f0f;
+  background-color: #212529;
+  box-shadow: 3px 4px 34px -14px rgba(0,0,0,0.75);
 }
