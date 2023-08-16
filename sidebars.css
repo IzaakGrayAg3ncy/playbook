@@ -23,6 +23,7 @@ main {
   max-height: 100vh;
   overflow-x: auto;
   overflow-y: hidden;
+  z-index: 1;
 }
 
 
@@ -239,4 +240,14 @@ main {
   border: 1px solid #d2ff2f0f;
   background-color: #212529;
   box-shadow: 3px 4px 34px -14px rgba(0,0,0,0.75);
+}
+
+canvas { 
+  position: absolute;
+  width:82%;
+  height:100%;
+  margin-left:18%;
+  z-index: 0;
+  pointer-events: none;
+  filter: blur(1px);
 }
