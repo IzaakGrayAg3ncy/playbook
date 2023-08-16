@@ -190,3 +190,24 @@ main {
   font-size: 1.25rem;
   font-weight: 300;
 }
+
+.agency-video {
+  border: 1px solid #d2ff2f5a;
+  box-shadow: 3px 4px 34px -14px rgba(0,0,0,0.75);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #212529;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 0.25rem;
+}
+
+.audtext{
+  font-size: 0.85rem;
+}
