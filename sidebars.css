@@ -251,3 +251,50 @@ canvas {
   pointer-events: none;
   filter: blur(1px);
 }
+
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: #212529;
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: #212529;
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: #212529;
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #f4f4f4;
+  vertical-align: top;
+  border-color: #dee2e6;
+}
+
+.brand-icon {
+ text-align: center;
+ vertical-align: middle;
+}
+
+.bricon {
+  font-size: 2rem;
+}
+
+.twt {
+  color: #d3ff2f;
+  background: -webkit-linear-gradient(#5dbbf6, #136ca3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.disc {
+  color: #d3ff2f;
+  background: -webkit-linear-gradient(#8597d7, #4264e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tele {
+  color: #d3ff2f;
+  background: -webkit-linear-gradient(#61c9fd, #01a4f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
