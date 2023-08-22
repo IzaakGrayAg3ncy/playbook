@@ -274,6 +274,11 @@ canvas {
  vertical-align: middle;
 }
 
+td {
+  vertical-align: middle;
+}
+
+
 .bricon {
   font-size: 2rem;
 }
@@ -298,3 +303,4 @@ canvas {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
