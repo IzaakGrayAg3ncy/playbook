@@ -14,7 +14,17 @@
     <script src="https://kit.fontawesome.com/229d6576fa.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <canvas id="canvas"></canvas>
+    <style>
+    canvas { 
+      position: absolute;
+      width:82%;
+      height:100%;
+      margin-left:18%;
+      z-index: 0;
+      pointer-events: none;
+      filter: blur(1px);
+    }</style>
+    <canvas id="canvas" class="canvas"></canvas>
 <main>
   
   <h1 class="visually-hidden">AG3NCY</h1>

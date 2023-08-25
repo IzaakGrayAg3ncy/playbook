@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link href="sidebars.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/229d6576fa.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js" integrity="sha512-7U4rRB8aGAHGVad3u2jiC7GA5/1YhQcQjxKeaVms/bT66i3LVBMRcBI9KwABNWnxOSwulkuSXxZLGuyfvo7V1A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
 
@@ -70,10 +71,118 @@
   <div class="main-body d-flex flex-grow-1 justify-content-center align-items-center">
     <div class="container">
       <div class="row">
-        
+        <div class="col">
+        <h1 class="three">Messaging</h1>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item d-flex justify-content-between align-items-start tovlist">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">We are Authoritative</div>
+              Knowledgeable, confident, actionable. We position ourselves as an authority and trusted source in web3 marketing. Our content demonstrates deep industry knowledge and provides clear, actionable advice.
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start tovlist">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">We are Innovative</div>
+              The ideas company, high-level, pioneering. Our messaging highlights our innovative approach to marketing. We use ambitious storytelling to position ourselves as an industry leader.
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start tovlist">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">We are Storytellers</div>
+              Attention-grabbing, connected, authentic. We focus on emotional storytelling to build connections. Our content features collaborations and encourages transparency.
+            </div>
+          </li>
+        </ol>
+        <h1 class="three">Voice</h1>
+        <ol class="list-group list-group-numbered">
+          <li class="list-group-item d-flex justify-content-between align-items-start tovlist">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">We are Conversational</div>
+              Our content uses clear, straightforward language that is easy to understand. We explain complex topics clearly.
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start tovlist">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">We are Confident</div>
+              Our tone is assuring and we position ourselves as an authority. Our advice and insights demonstrate expertise.
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start tovlist">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">We are Forward-thinking</div>
+              Our language reflects our pioneering approach. Our content focuses on future trends and developing technologies.
+            </div>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start tovlist">
+            <div class="ms-2 me-auto">
+              <div class="fw-bold">We are Community-focused</div>
+              Our messaging highlights collaboration, partnerships, transparency. Our content aims to foster connections.
+            </div>
+          </li>
+        </ol>          
+      </div>
+      <div class="col">
+        <h1 class="three">Brand Personality</h1>
+        <canvas id="chartId" aria-label="chart" height="700" width="580"></canvas>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.1.1/chart.min.js"></script>
+   <script>
+      var chrt = document.getElementById("chartId").getContext("2d");
+      Chart.defaults.color = '#f4f4f4';
+      Chart.defaults.font.size = 16;
+      var chartId = new Chart(chrt, {
+         type: 'radar',
+         data: {
+            labels: ["Professional", "Casual", "Meme-y", "Informative", "Fun", "Corporate"],
+            datasets: [{
+               label: "Score out of 10",
+               data: [8, 7, 5, 10, 8, 2],
+               backgroundColor: ['rgba(210, 255, 47, 0.05)'],
+               pointBackgroundColor: ['#d2ff2f', '#d2ff2f', '#d2ff2f', '#d2ff2f', '#d2ff2f', '#d2ff2f'],
+
+               borderColor: ['#d2ff2f'],
+               borderWidth: 1,
+               pointRadius: 6,
+            }],
+         },
+         options: {
+          plugins: {
+            legend: {
+                labels: {
+                    // This more specific font property overrides the global property
+                    font: {
+                        size: 20
+                    }
+                }
+            }
+        },
+          scales: {
+        r: {
+            angleLines: {
+                display: false
+            },
+            pointLabels: {
+              font: {
+                size: 18
+              }
+            },
+            suggestedMin: 1,
+            suggestedMax: 10
+        }
+    },
+            responsive: false,
+            elements: {
+               line: {
+                  borderWidth: 3
+               }
+            }
+         },
+      });
+   </script>
       </div>
     </div>
   </div>
+</div>
+
 
 </main>
 

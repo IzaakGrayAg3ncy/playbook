@@ -242,15 +242,7 @@ main {
   box-shadow: 3px 4px 34px -14px rgba(0,0,0,0.75);
 }
 
-canvas { 
-  position: absolute;
-  width:82%;
-  height:100%;
-  margin-left:18%;
-  z-index: 0;
-  pointer-events: none;
-  filter: blur(1px);
-}
+
 
 
 .table {
@@ -304,3 +296,11 @@ td {
   -webkit-text-fill-color: transparent;
 }
 
+.radar {
+  width:20%;
+  height:20%;
+}
+
+.tovlist {
+  font-size: 1rem;
+}
